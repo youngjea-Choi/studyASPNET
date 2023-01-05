@@ -28,7 +28,7 @@ ASP.NET Core 학습 리포지토리
    - 핀터레스트 스타일 프론트엔드 연습
    - 소스
 2. 결과화면
-![메인화며](https://raw.githubusercontent.com/youngjea-Choi/studyASPNET/main/images/html_screen01.png.png)   
+![메인화며](https://raw.githubusercontent.com/youngjea-Choi/studyASPNET/main/images/html_screen01.png)   
    
 
 ## 5일차

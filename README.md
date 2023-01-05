@@ -26,8 +26,10 @@ ASP.NET Core 학습 리포지토리
 
 1. 웹 기반기술 총복습
    - 핀터레스트 스타일 프론트엔드 연습
-   - [소스] (https://github.com/youngjea-Choi/studyASPNET/tree/main/Day04/FrontEndExec/Pages)
+   - [소스](https://github.com/youngjea-Choi/studyASPNET/tree/main/Day04/FrontEndExec/Pages)
 2. 결과화면
+
+
 ![메인화며](https://raw.githubusercontent.com/youngjea-Choi/studyASPNET/main/images/html_screen01.png)   
 메인화면 
 

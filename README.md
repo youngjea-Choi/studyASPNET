@@ -50,3 +50,5 @@ ASP.NET Core 학습 리포지토리
    - 게시판 글 생성
    - trumbowyg 에디터 추가
    
+   
+   https://localhost:7264/Note

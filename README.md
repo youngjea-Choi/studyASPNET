@@ -33,7 +33,7 @@ ASP.NET Core 학습 리포지토리
 ![메인화며](https://raw.githubusercontent.com/youngjea-Choi/studyASPNET/main/images/html_screen01.png)   
 메인화면 
 
-
+![라이트박스 화면](https://raw.githubusercontent.com/youngjea-Choi/studyASPNET/main/images/html_screen02.png)
 라이트박스 화면
    
 

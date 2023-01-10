@@ -58,7 +58,8 @@ ASP.NET Core 학습 리포지토리
    - 게시판 완성
    
 2. 결과화면
-
+![게시판 페이지 화면](https://raw.githubusercontent.com/youngjea-Choi/studyASPNET/main/images/_screen01.png)   
+게시판페이지 화면 
 ## 8일차
 1. ASP.NET Core
   - 회원가입

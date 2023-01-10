@@ -1,11 +1,11 @@
-﻿using BoardWedApp.Data;
-using BoardWedApp.Models;
+﻿using BoardWebApp.Data;
+using BoardWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.VisualBasic;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
-namespace BoardWedApp.Controllers
+namespace BoardWebApp.Controllers
 {
 	public class NoteController : Controller
 	{

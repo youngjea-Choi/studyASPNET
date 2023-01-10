@@ -1,8 +1,9 @@
-using BoardWedApp.Data;
+using BoardWebApp.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
-namespace BoardWedApp
+namespace BoardWebApp
 {
     public class Program
     {
@@ -17,6 +18,14 @@ namespace BoardWedApp
             builder.Services.AddDbContext<ApplicationDbContext>(option => option.UseSqlServer(
                 builder.Configuration.GetConnectionString("DbConnection")
                 ));
+
+            // ASPNET Identity용 서비스 추가
+            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+                   .AddEntityFrameworkStores<ApplicationDbContext>()
+                   .AddDefaultTokenProviders();
+
+
+
 
             var app = builder.Build();
 
@@ -33,6 +42,7 @@ namespace BoardWedApp
 
             app.UseRouting();
 
+            app.UseAuthentication(); // 이제부터 계정사용할 거다
             app.UseAuthorization();
 
             app.MapControllerRoute(

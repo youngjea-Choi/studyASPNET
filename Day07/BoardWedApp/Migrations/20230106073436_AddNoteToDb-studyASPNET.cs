@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace BoardWedApp.Migrations
+namespace BoardWebApp.Migrations
 {
     public partial class AddNoteToDbstudyASPNET : Migration
     {

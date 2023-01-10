@@ -1,0 +1,79 @@
+﻿@model BoardWebApp.Models.RegisterModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUAAAD///8lJSW1tbXy8vL8/PykpKTGxsbs7Oz29vZgYGDp6empqamwsLDZ2dne3t6ampqJiYl5eXnT09NWVlY4ODjNzc1lZWVRUVG+vr6QkJBISEhvb289PT1JSUlqamp/f38MDAyOjo4bGxszMzMsLCwiIiKP/YGqAAADhUlEQVR4nO3c6VbiQBCGYRqSsBMWBRGQxdH7v8QJKEowC5CKVcT3+Ts5x/qGkO6u7lCrAQAAAAAAAAAAAAAAAAAAAADwt9TXD9ollGncbDvX0K6iNNue7/YqmzBwn/ralZTjoX0M6ALtWkrx9QFGRtrFlKF5EtA9aldTgulpQKddTQkasYBN7XLkbWIB3Vi7HnFv8YAVvEkH8YA97XrELSv/EbbiAas33M/iAT3teuTFh0L3pF2PvHjAoXY58uJj4Vy7nBI0qh4wNhhW8BaNfK8K/Y52LeX4CljZ1sUx35t2IaXx/HbYWGpXgUvVZ5vn4W68Sr1guwyaoee1BvPh+hfrkrEdTb8em/5k9/rzilUQxkb/cFj//TJv9nA2+3RucraSf+6eXxGZ3kt/fzFIqN75/cXxglkz6YLDf8Q/zcIv1Ugr33WD2Xt92W+nXuDuYaKz8rLqv8BEO0GOdcF8ka52hkyb/AD5WtopMowlAkYDh3aOVE8yAQ1Py/2qJ5xIBbS6chT6EjrP7OxN6B61+yQdygQ03CKWCejM3qK1nUzAmXaOdEmroesZ7qA+igT0tWNkCPLLv8CzdowMYX75+Sx/hDJPUssb3h2RhJZbGCLDvd3ZTC2rN3MFqyuKg8Tu2rVMn+Br5defz+qi6UBkXWF3SloTGiy0Q2QiIQkPLA/4MgkNrw2FEu60U2TJ3E66lOk5jcgK33ATSqoZbPkISl8koeXTtDLN0rZ2jAwCG6N7G+0c6V5lElp+1sgktPxN/HGA5kaL/D+lRKZfavlh8yKU0PBJDLEdbrPHFFIPcl2tu9XOkkzkJM0HqyfA5RJaXWWIncTY8y32TgVv0z2LL+nLJrR4mFZk7+LI5Mi/kExoc4Iqsg/8yeaYeP6GbwFW39EX2YE6eNGOkkLq7J4baCdJJfUhWhwqPgi1aywf1xfZ7Xbpb0rpEzn8ZXPefdQrHtD0yahI0VdmnLP+/mXhhs1UO0Gugl036/foXrGdNtMbwZ/qRQLafo4eFZiB2+2Wxt2+m2j6WNSpW7tSRtuISW5bDG+0y75G6gPVTz+2YbGDmCFhDh4GnffDv60284Rtjrv7ZbqzGao3jP/qwPpsx9Gzu3OY6unkyzhN+FWIt973B+nbf0k9UWceLfr9VnOU1jnr9CatthfO7+4GBQAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/7j8xviXsgcMNmQAAAABJRU5ErkJggg==" alt="" width="72" height="72">
+    <h2>회원가입</h2>
+
+</div>
+<hr />
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <h4 class="mb-3">회원 정보</h4>
+            <form asp-action="Register">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="mb-3">
+                    <label asp-for="Id" class="control-label"></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">&hearts;</span>
+                        </div>
+                        <input asp-for="Id" class="form-control" placeholder="아이디 입력" required />
+                    </div>
+                    <span asp-validation-for="Id" class="text-danger"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label asp-for="UserName" class="control-label"></label>
+                    <input asp-for="UserName" class="form-control" placeholder="이름입력" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" placeholder="you@example.com" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="ConfirmPassword" class="control-label"></label>
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="PhoneNumber" class="control-label"></label>
+                    <span class="text-muted">(옵션)</span>
+                    <input asp-for="PhoneNumber" class="form-control" placeholder="010-1234-5678" />
+                </div>
+                <div class="mb-3">
+                    <button type="submit" value="Create" class="btn btn-primary">
+                        <span class="bi bi-person-plus-fill"></span>
+                        회원가입
+
+                    </button>
+                    <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">
+                        <i class="bi bi-x-circle-fill"></i>
+                        취소
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

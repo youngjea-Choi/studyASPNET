@@ -1,8 +1,8 @@
-﻿using BoardWedApp.Models;
+﻿using BoardWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace BoardWedApp.Controllers
+namespace BoardWebApp.Controllers
 {
     public class HomeController : Controller
     {

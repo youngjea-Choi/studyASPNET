@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace BoardWedApp.Models
+namespace BoardWebApp.Models
 {
     public class Note
     {

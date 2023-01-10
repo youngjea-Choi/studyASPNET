@@ -1,4 +1,4 @@
-namespace BoardWedApp.Models
+namespace BoardWebApp.Models
 {
     public class ErrorViewModel
     {

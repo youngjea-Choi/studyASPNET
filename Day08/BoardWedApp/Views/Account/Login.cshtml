@@ -2,13 +2,19 @@
 @{
     ViewData["Title"] = "Login";
 }
+<div class="mb-5"></div>
+<br />
+<br />
+<br />
 
 <div class="container custom-login">
     <div class="row justify-content-center">
         <div class="col-3">
             <form asp-controller="Account" asp-action="Login">
-                <img class="mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-                <h1 class="h3 mb-3 fw-normal">로그인</h1>
+                <img class="mb-4" src="https://img.etnews.com/photonews/2002/1274201_20200220145654_335_0001.jpg" alt="" width="72" height="72">
+                <h4 class="h3 mb-3 fw-normal">로그인</h4>
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
                 <div class="form-floating">
                     <input type="text" class="form-control" asp-for="UserName" placeholder="아이디입력" id="floatingInput">
@@ -21,12 +27,12 @@
 
                 <div class="checkbox mb-3">
                     <label asp-for="RememberMe">
-                        <input asp-for="RememberMe" type="checkbox" value="remember-me"> @Html.DisplayNameFor(m=>m.RememberMe)
+                        <input asp-for="RememberMe" type="checkbox"> @Html.DisplayNameFor(m=>m.RememberMe)
                     </label>
                 </div>
                 <button class="w-100 btn btn-lg btn-primary" type="submit">로그인</button>
-                <p class="mt-5 mb-3 text-muted">© 2023</p>
             </form>
         </div>
     </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 </div>

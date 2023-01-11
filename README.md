@@ -65,8 +65,10 @@ ASP.NET Core 학습 리포지토리
 게시판본문 화면
 ## 8일차
 1. ASP.NET Core
+  ASP.NET Core
   - 회원가입
   - 로그인
   - 세션관리
    
-   
+2. 결과화면
+![회원가입 화면](https://github.com/youngjea-Choi/studyASPNET/blob/main/images/aspnet_screen03.png?raw=true) 

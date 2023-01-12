@@ -77,3 +77,21 @@ ASP.NET Core 학습 리포지토리
 
 ![템플릿적용화면](https://github.com/youngjea-Choi/studyASPNET/blob/main/images/aspnet_screen04.png?raw=true)
 템플릿 적용화면
+
+## 9일차
+1. ASP.NET Core
+   -Bootstrap 템플릿 적용 1차완료
+   - 로그인계정 글쓰기
+   - 메인페이지 DB연동
+   
+   
+2. 개발화면
+
+
+## 10일차  
+1. ASP.NET Core
+  -마무리
+  
+2. 개발화면
+
+
